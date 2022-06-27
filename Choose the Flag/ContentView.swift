@@ -19,9 +19,11 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             RadialGradient(stops: [
-                .init(color: Color(red: 0.1, green: 0.7, blue: 0.25), location: 0.3),
-                .init(color: Color(red: 0.86, green: 0.8, blue: 0.16), location: 0.3)],
+                .init(color: Color(red: 0.3, green: 0.45, blue: 0.65), location: 0.3),
+                //periwinkle blue
+                .init(color: Color(red: 0.86, green: 0.85, blue: 0.16), location: 0.3)],
                            center: .top, startRadius: 200, endRadius: 700)
+                //chartreuese
                 .ignoresSafeArea()
                 VStack {
                     Text("Guess the Flag")
@@ -100,7 +102,7 @@ struct ContentView: View {
         }
     }
 
-// Cool Rainbow Gradiant 
+// Cool Rainbow Gradiant
 //        ZStack  {
 //
 //            AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .orange,  .red]), center: .center)
